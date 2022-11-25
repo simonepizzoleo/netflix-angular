@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
 import { FilmComponent } from './film/film.component';
 import { FilmDetailComponent } from './film-detail/film-detail.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GridComponent,
     FilmComponent,
-    FilmDetailComponent
+    FilmDetailComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,

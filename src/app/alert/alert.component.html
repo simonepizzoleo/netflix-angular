@@ -1,0 +1,6 @@
+<article *ngIf="isAlertActive" class="page-alert" [ngClass]="{ 'page-alert--danger': isAlertDanger }">
+    
+    <!-- Message -->
+    <p class="page-alert__message"> {{ message }} </p>
+
+</article>

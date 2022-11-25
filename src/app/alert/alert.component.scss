@@ -1,0 +1,26 @@
+@import '../../app/variables';
+
+// Alert
+.page-alert {
+    padding: 20px;
+    background-color: #006D5B;
+    border-bottom: 2px solid #005446;
+
+    // Message
+    &__message {
+        margin: 0 auto;
+        color: $white;
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    // [Modifier] Danger
+    &--danger {
+        background-color: #ba001f;
+        border-bottom: 2px solid #a0001a;
+    }
+
+}
