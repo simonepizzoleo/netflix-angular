@@ -1,0 +1,12 @@
+// Breakpoints
+@mixin bp-sm {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin bp-md {
+    @media only screen and (min-width: 1024px) {
+        @content;
+    }
+}

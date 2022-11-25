@@ -1,0 +1,18 @@
+<!-- Film -->
+<a [routerLink]="['film', film.name]" class="films-container__film" [title]="film.name">
+
+    <!-- Image -->
+    <img class="films-container__film-image" [src]="film.image" [alt]="film.name" />
+
+    <!-- Content -->
+    <div class="films-container__film-content">
+
+        <!-- Name -->
+        <h2 class="films-container__film-name"> {{ film.name }} </h2>
+
+        <!-- Description -->
+        <p class="films-container__film-description"> {{ film.description }} </p>
+
+    </div>
+
+</a>

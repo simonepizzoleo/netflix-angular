@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GridComponent } from './grid/grid.component';
+import { FilmComponent } from './film/film.component';
+import { FilmDetailComponent } from './film-detail/film-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GridComponent,
+    FilmComponent,
+    FilmDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -15,4 +21,5 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {}

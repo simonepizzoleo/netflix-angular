@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'app/breakpoints';
+
+// Variables
+$primary: #181A1E;
+$white: #FFFFFF;
+
+$archivo: 'Archivo', sans-serif;
+
+// Reset
+html,
+body {
+    margin: unset;
+    padding: unset;
+}
+
+html {
+    word-break: break-word;
+    font-size: 100%;
+}
+
+body {
+    background-color: $primary;
+}
+
+*,
+*::before,
+*::after {
+    font: inherit;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+a {
+
+    img,
+    svg {
+        display: block;
+    }
+
+}
+
+// Typography
+body,
+p {
+    font-size: 18px;
+    line-height: 28px;
+
+    @include bp-md {
+        
+        & {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+    }
+
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: $archivo;
+    color: $white;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+
+    @include bp-md {
+        
+        & {
+            font-size: 40px;
+            line-height: 46px;
+        }
+
+    }
+    
+}
+
+h2 {
+    font-size: 25px;
+    line-height: 30px;
+
+    @include bp-md {
+        
+        & {
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
