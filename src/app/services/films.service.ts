@@ -13,7 +13,8 @@ export class FilmsService {
 	constructor() {
 
 		// Fetch Films from external API
-		const URL_TO_FETCH = 'https://api.themoviedb.org/3/trending/all/day?api_key=3cafd4d9cc19c3427bd43a82ab0ae89f';
+		const API_KEY = '3cafd4d9cc19c3427bd43a82ab0ae89f';
+		const URL_TO_FETCH = `https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}`;
 
 		fetch(URL_TO_FETCH)
 		.then((res) => res.json())
