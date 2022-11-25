@@ -8,7 +8,7 @@ import { Film } from '../classes/film.class';
 })
 export class FilmComponent implements OnInit {
 
-  @Input() film!: Film;
+  @Input() film: Film;
   descriptionMaxLength: number = 69;
 
   constructor() {}
